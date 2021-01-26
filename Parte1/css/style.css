@@ -1,0 +1,697 @@
+html {
+    --primary: #8158c5;
+    --secondary: #ffa200;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/************* Header **************/
+
+header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+    max-width: 1170px;
+    justify-content: space-between;
+}
+
+.search {
+    width: 200px;
+    border: solid 1px #cccccc;
+    display: flex;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+.search input {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+.search input[type=text] {
+    width: 70%;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+
+.search input[type=text]:focus {
+    width: 88%;
+}
+
+#i-search {
+    background-image: url('../img/search.png');
+    width: 25px;
+    height: 25px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+#itens-cart {
+    position: relative;
+    background: #ffa200;
+    border-radius: 50%;
+    padding: 4px;
+    top: -10px;
+    font-size: 11px;
+    right: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logincart {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#i-login {
+    background-image: url('../img/login.png');
+    width: 19px;
+    height: 25px;
+    display: block;
+    margin-right: 8px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#i-login:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#i-cart {
+    background-image: url('../img/cart.png');
+    width: 31px;
+    height: 27px;
+    display: block;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#i-cart:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+/************* nav Header **************/
+.line-mobile {
+    display: none;
+}
+
+.nav-header {
+    max-width: 100%;
+    background-color: var(--primary);
+    margin-top: 1em;
+}
+
+.nav-header ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.nav-header li {
+    position: relative;
+}
+
+.nav-header li a {
+    color: white;
+    text-decoration: none;
+    float: left;
+    width: 100%;
+    padding: 1em;
+}
+
+.nav-header li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 10px;
+    width: calc(100% - 16px);
+    height: 3px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transition: transform .3s ease-out;
+}
+
+#menu-mob {
+    display: none;
+}
+
+.nav-header li a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-header li a:hover {
+    color: var(--secondary);
+}
+
+#mais {
+    background-image: url('../img/ver-mais.png');
+    width: 36px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+
+/********* 3 Banners *******/
+
+.line-banners {
+    width: 100%;
+    background: var(--secondary);
+}
+
+
+.banner-box a {
+    transition: transform .2s;
+    display: inline-block;
+    width: 100%;
+}
+
+.banner-box a:hover {
+    transform: scale(1.03);
+
+}
+
+.banner-box img {
+    width: 95%;
+}
+
+.banners-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0em;
+}
+
+/******* Produtos *********/
+
+.box-text {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+    color: rgb(94, 92, 92);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.line-produtos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-produtos {
+    display: flex;
+    margin-top: 2em;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto {
+    text-align: center;
+    line-height: 2em;
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 0em;
+}
+
+.produto:hover {
+    box-shadow: 0px 0px 6px -2px var(--primary);
+
+}
+
+.produto a {
+    text-decoration: none;
+    color: grey;
+
+
+}
+
+.produto a:hover {
+    color: var(--primary);
+
+}
+
+.tag {
+    position: absolute;
+    background-color: var(--primary);
+    padding: 0.3em 1em;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    left: 0;
+}
+
+
+
+
+.compra-rapida {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top: 0;
+    left: 0;
+}
+
+.compra-rapida:hover {
+    background-color: #ffffffa1;
+    transition: 0.7s;
+}
+
+.comprar {
+    display: none;
+    position: absolute;
+    top: 45%;
+    background-color: var(--secondary);
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    left: 25%;
+}
+
+.promo-banners {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.promo-banners img {
+    width: 95%;
+    margin-left: 1em;
+}
+
+
+.promo-banners a:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+
+
+/********** Info e Newsletter ***********/
+.info {
+    background-color: var(--primary);
+    margin-top: 2em;
+}
+
+
+
+.box-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.boxs-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border-bottom: solid 2px var(--secondary);
+}
+
+.i-pet {
+    background-image: url('../img/icon-pet.png');
+    width: 31px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 0.8em;
+}
+
+.newsletter {
+    background-color: var(--primary);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.new-box {
+    margin: 0 auto;
+    max-width: 520px;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+}
+
+
+
+.assine {
+    margin: 0 auto;
+    margin-top: 2em;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.assine input {
+    padding-top: 0.8em;
+    padding-bottom: 0.2em;
+    background: none;
+    width: 39%;
+    border: 0;
+    min-width: 140px;
+    border-bottom: solid 1px white;
+    color: white;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.assine input::placeholder {
+    color: white;
+}
+
+button {
+    border: 0;
+    padding: 1em;
+    float: right;
+    cursor: pointer;
+    color: white;
+    background-color: var(--secondary);
+    text-transform: uppercase;
+}
+
+/************* Footer ************************/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2em;
+    border-bottom: solid 1px #8080802e;
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-top: 2em;
+    justify-content: space-between;
+}
+
+.logo-redes {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+}
+
+.logo-redes img {
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.i-facebook a {
+    font-size: 0;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('../img/facebook.png');
+    background-color: grey;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.i-instagram a {
+    font-size: 0;
+    width: 30px;
+
+    border-radius: 50%;
+    height: 30px;
+    background-image: url('../img/instagram.png');
+    background-color: grey;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.i-twitter a {
+    font-size: 0;
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/twitter.png');
+    background-color: grey;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.redes i {
+    margin-right: 1em;
+    height: 30px;
+}
+
+.i-facebook a:hover {
+    background-color: var(--secondary);
+}
+
+.i-instagram a:hover {
+    background-color: var(--secondary);
+}
+
+.i-twitter a:hover {
+    background-color: var(--secondary);
+}
+
+footer h3 {
+    color: var(--primary);
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+
+footer nav {
+    width: 42%;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 1em;
+    line-height: 2em;
+    padding-top: 0;
+}
+
+footer nav ul li {
+    color: grey;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: grey;
+
+}
+
+footer nav ul li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.pagamento {
+    width: 56%;
+    float: left;
+}
+
+.bandeiras {
+    padding-left: 1em;
+}
+
+.desenvolvimento {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: grey;
+    padding: 2em;
+}
+
+.desenvolvimento img {
+    margin-left: 1em;
+    ;
+}
+
+
+/*********** 1024px ***********/
+
+@media (max-width: 1024px) {
+    .box-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
+
+/*********** 768px ************/
+@media (max-width: 768px) {
+    .boxs-info {
+        flex-direction: column;
+    }
+
+    .box-info {
+
+        width: 100%;
+    }
+
+    .assine {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        margin-top: 2em;
+    }
+
+    .nav-header {
+        display: none;
+    }
+    
+    #search-off{display: none;}
+
+    .line-mobile{display: flex;flex-direction: row;}
+
+    footer{
+        flex-direction: column;
+    }
+
+    .box-footer{
+        width: 100%;
+    }
+
+    footer nav{
+        margin-left: 1em;
+        width: 50%;
+    }
+
+    .logo-redes{
+        margin-left: 1em;
+    }
+
+    .pagamento{
+        margin-left: 1em;
+    }
+}
+
+
+
+/*************** 520px *************/
+
+@media (max-width: 768px) {
+
+    .line-produtos{
+        flex-direction: column;
+    }
+
+    .promo-banners {
+        flex-direction: column;
+    }
+
+    .promo-banners a:hover{
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+
+}
+
+
+
+/********** Menu Drop *********/
+
+#search-on{
+    border: 0;
+    margin-left: 0;
+    margin-right: 1em;
+}
+
+.dropbtn {
+    
+float: right;
+}
+
+.dropdown {
+    position: relative;
+    background: var(--primary);
+    display: inline-block;
+    width: 72%;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary);
+    min-width: 160px;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+    top: 54px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--secondary);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

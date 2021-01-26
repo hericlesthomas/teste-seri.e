@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Pet Store</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/js.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/jssor.slider.min.js" type="text/javascript"></script>
+    <script src="js/sliderjs.js" type="text/javascript"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="search-off" class="search">
+            <input type="text" placeholder="Pesquisar..">
+            <i id="i-search"></i>
+        </div>
+
+
+        <a href="#"><img src="img/logo.png" title="Pet Store" alt="Pet Store"></a>
+
+
+        <div class="logincart">
+
+            <i id="i-login"></i>
+            <i id="i-cart"></i>
+            <span id="itens-cart">99</span>
+
+        </div>
+
+    </header>
+
+    <div class="line-mobile">
+
+        <div id="search-on" class="search">
+            <input type="text" placeholder="Pesquisar..">
+            <i id="i-search"></i>
+        </div>
+
+        <nav class="dropdown">
+            <div id="mais" class="dropbtn"></div>
+            <ul class="dropdown-content">
+                <li><a href="#">Cachorro</a></li>
+                <li><a href="#">Gatos</a></li>
+                <li><a href="#">Outros Pets</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="#">Raças</a></li>
+                <li><a href="#">Saúde</a></li>
+                <li><a href="#">Outlet</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <nav class="nav-header">
+
+        <ul class="container">
+            <li><a href="#">Cachorro</a></li>
+            <li><a href="#">Gatos</a></li>
+            <li><a href="#">Outros Pets</a></li>
+            <li><a href="#">Marcas</a></li>
+            <li><a href="#">Raças</a></li>
+            <li><a href="#">Saúde</a></li>
+            <li><a href="#">Outlet</a></li>
+            <li><a href="#">Serviços</a></li>
+            <span id="mais"><a href="#"></a></span>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Slider home -->
+
+    <div id="jssor_1">
+        <!-- Carregando -->
+        <div data-u="loading" class="jssorl-009-spin">
+            <img id="js-spin" src="svg/spin.svg" />
+        </div>
+        <div data-u="slides" id="slider-banner">
+            <div>
+                <img data-u="image" src="img/banner-home-1.png" title="Pet Store" alt="Pet Store" />
+            </div>
+            <div>
+                <img data-u="image" src="img/banner-home-1.png" title="Pet Store 2" alt="Pet Store 2" />
+            </div>
+        </div>
+
+        <!-- Navegação entre -->
+
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1"
+            data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Setas de navegação -->
+
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2"
+            data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;"
+            data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Fim slider home -->
+
+
+    <div class="line-banners">
+
+        <div class="banners-home container">
+            <div class="banner-box">
+                <a href="#"><img src="img/racoes.png"></a>
+            </div>
+            <div class="banner-box">
+                <a href="#"><img src="img/brinquedos.png"></a>
+            </div>
+            <div class="banner-box">
+                <a href="#"><img src="img/acessorios.png"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <!-- Novidades -->
+
+        <div class="box-text">
+            Novidades
+        </div>
+
+        <div class="line-produtos">
+
+            <div class="box-produtos">
+
+                <div class="produto">
+                    <img src="img/produto1.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+                <div class="produto">
+                    <span class="tag">
+                        50% Off
+                    </span>
+                    <img src="img/produto2.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99<br />
+                        12x R$ 8,33 </a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="box-produtos">
+
+                <div class="produto">
+
+                    <img src="img/produto3.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+                <div class="produto">
+                    <span class="tag">
+                        Novo
+                    </span>
+                    <img src="img/produto4.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99<br />
+                        12x R$ 8,33</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+
+            </div>
+            <!--box produtos-->
+        </div>
+
+        <!--line-produtos-->
+
+        <div class="promo-banners container">
+
+            <a href="#"><img src="img/banner-gatos.png"></a>
+            <a href="#"><img src="img/banner-cachorros.png"></a>
+
+        </div>
+
+
+        <!-- Destaques -->
+
+        <div class="box-text">
+            Destaques
+        </div>
+
+        <div class="line-produtos">
+
+            <div class="box-produtos">
+
+                <div class="produto">
+                    <img src="img/produto1.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <span class="tag">
+                        50% Off
+                    </span>
+                    <img src="img/produto2.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99<br />
+                        12x R$ 8,33 </a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box-produtos">
+
+                <div class="produto">
+
+                    <img src="img/produto3.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+                <div class="produto">
+                    <span class="tag">
+                        Novo
+                    </span>
+                    <img src="img/produto4.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99<br />
+                        12x R$ 8,33</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+
+            </div>
+            <!--box produtos-->
+        </div>
+        <!--line-produtos-->
+
+        <div class="line-produtos">
+
+            <div class="box-produtos">
+
+                <div class="produto">
+                    <img src="img/produto1.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+                <div class="produto">
+                    <span class="tag">
+                        50% Off
+                    </span>
+                    <img src="img/produto2.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99<br />
+                        12x R$ 8,33 </a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="box-produtos">
+
+                <div class="produto">
+
+                    <img src="img/produto3.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+                <div class="produto">
+                    <span class="tag">
+                        Novo
+                    </span>
+                    <img src="img/produto4.png">
+                    <a href="#">Cama para cachorro<br />
+                        R$ 99,99<br />
+                        12x R$ 8,33</a>
+
+                    <a href="#" class="compra-rapida">
+                        <p class="comprar">Compra rapida</p>
+                    </a>
+
+                </div>
+
+            </div>
+            <!--box produtos-->
+        </div>
+        <!--line-produtos-->
+
+    </div>
+    <!--container-->
+
+    <div class="info">
+        <div class="container boxs-info">
+            <div class="box-info">
+                <i class="i-pet"></i>
+                <p><b>Entrega gratuita</b> a partir de R$ 99</p>
+            </div>
+            <div class="box-info">
+                <i class="i-pet"></i>
+                <p><b>Parcelamento</b> sem juros</p>
+            </div>
+            <div class="box-info">
+                <i class="i-pet"></i>
+                <p><b>Cadastre-se</b> e ganhe descontos</p>
+            </div>
+        </div>
+    </div>
+    <!--info-->
+
+    <div class="newsletter">
+
+        <div class="new-box">
+            <p>
+                <h2>Assine nossa newsletter</h2>
+            </p>
+
+            <p>
+                Cadastre-se para receber nossas novidades e descontos exclusivo
+            </p>
+        </div>
+
+        <div class="assine">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="E-mail">
+            <button>Enviar</button>
+        </div>
+
+    </div>
+    <!--newsletter-->
+
+
+
+
+    <footer class="container">
+
+        <div class="box-footer">
+
+            <div class="logo-redes">
+                <img src="img/logo.png" title="Pet Store" alt="Pet Store">
+
+                <div class="redes">
+                    <i class="i-facebook"><a href="#">Facebook</a></i>
+                    <i class="i-instagram"><a href="#">Instagram</a></i>
+                    <i class="i-twitter"><a href="#">Twitter</a></i>
+                </div>
+                <p style="text-align: center;">© 2019 • CNPJ 00.000.000/0000-00<br /> Rua Tal de Tal, 123 - Cidade</p>
+            </div>
+
+
+            <nav>
+                <h3>Pet Store</h3>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Frete e Entregas</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!--box-footer-->
+
+        <div class="box-footer">
+
+            <nav>
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="#">Chat</a></li>
+                    <li>(11) 98976-8798</a></li>
+                    <li>(11) 5637-8479</a></li>
+                    <li><a href="mailto:contato@petstore.com.br">contato@petstore.com.br</a></li>
+                </ul>
+            </nav>
+
+            <div class="pagamento">
+                <h3>Pagamento</h3>
+
+                <div class="bandeiras">
+                    <img src="img/visa.png">
+                    <img src="img/mastercard.png">
+                    <img src="img/american.png">
+                    <img src="img/dinersclub.png">
+
+                </div>
+                <div class="bandeiras">
+
+                    <img src="img/hipercard.png">
+                    <img src="img/aura.png">
+                    <img src="img/elo.png">
+                    <img src="img/boleto.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container desenvolvimento">
+        técnologia e desenvolvimento: <img src="img/serie.png">
+    </div>
+
+    <!-- Banner Slider -->
+    <script type="text/javascript">
+        jssor_1_slider_init();
+    </script>
+
+
+    <!-- Aparecer compra rápida -->
+    <script>
+        $(function () {
+            $(".comprar").hide();
+            $(".compra-rapida").hover(
+                function () {
+                    $(this).children(4).show();
+                },
+                function () {
+                    $(this).children(4).hide();
+                }
+            );
+        });
+    </script>
+
+
+</body>
+
+</html>
